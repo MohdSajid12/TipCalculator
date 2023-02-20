@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+
+        .container {
+            width: 430px;
+            height: 382px;
+            border: 2px solid white;
+            margin-left: 38%;
+            margin-top: 15%;
+        }
+
+        #dollar {
+            margin-left: 4%;
+            height: 6%;
+            width: 6%;
+        }
+
+        #person {
+            margin-left: 4%;
+            height: 6%;
+            width: 6%;
+        }
+
+        #serviceQual{
+            margin-left: 4px;
+            height: 30px;
+            width: 1362px;
+        }
+
+        #billamt {
+            width: 328px;
+            height: 24px;
+        }
+
+        #peopleamt {
+            width: 328px;
+            height: 24px;
+        }
+        #bill{
+            margin-left: 4%;
+            font-size: 1rem;
+        }
+        #guests{
+            margin-left: 4%;
+            font-size: 1rem;
+        }
+
+        #service{
+            margin-left: 4%;
+            font-size: 1rem;
+        }
+        #calculate{
+            margin-left: 177px;
+            height: 28px;
+            width: 83px;
+        }
+       h1{
+        margin-left: 112px;
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="text-decoration: underline;
+">Tip-Calculator</h1>
+
+        <p id="bill">Bill Amount</p>
+        <button id="dollar"><i class="fa-sharp fa-solid fa-dollar-sign"></i></button>
+        <input type="number" id="billamt" placeholder="Bill Amount">
+
+
+        <p id="guests">Number of guests</p>
+        <button id="person"><i class="fa-solid fa-person"></i></button>
+        <input type="number" id="peopleamt" placeholder="Number Of Guests">
+
+
+        <p id="service">Service Quality</p>
+        <select id="serviceQual" name="cars" style="width: 335px; height: 30px; margin-left: 11%;">
+            <option selected disabled>Choose..</option>
+            <option value="0.3">30%-Outstanding</option>
+            <option value="0.2">20%-Good</option>
+            <option value="0.15">15%-It was Ok</option>
+            <option value="0.1">10%-Bad</option>
+            <option value="0.05">5%-Terrible</option>
+        </select> <br><br>
+
+
+        <button id="calculate">Calculate</button>
+        <p id="totalTip"></p>
+
+    </div>
+
+
+</body>
+
+<script src="tip.js"></script>
+
+</html>
